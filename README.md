@@ -8,7 +8,7 @@ Data is sourced from [Hugging Face](https://huggingface.co/datasets/paperswithba
 - `Stocks-Daily-Price`: 24M rows of daily prices from 1962 to 2025 for ~6,644 US stocks.
 - `Stocks-Quarterly-BalanceSheet`: ~237k quarterly balance sheet records for those stocks.
 
-These are used to compute features like daily return and turnover rate.
+These are used to compute features like adjusted daily return and turnover rate.
 
 ## Model Methodology
 
@@ -52,12 +52,11 @@ w^{(t)}_n = \frac{1}{b \cdot \varrho} \cdot (\tilde{y}^{(t-1)}_n \Phi^T \tilde{y
 
 ## ⚙️ Implementation Details
 - Framework: PyTorch
-- Model: Multi-head self-attention transformer without decoder
+- Model: quantformer
 - Hidden Dim: 16
 - Layers: 6 encoder blocks
 - Optimizer: Adam
 - Batch Size: 64
-- Epochs: 50
 - GPUs: RTX 2070, A100
 
 ## Backtest Summary (2020 - 2024)
@@ -69,7 +68,7 @@ w^{(t)}_n = \frac{1}{b \cdot \varrho} \cdot (\tilde{y}^{(t-1)}_n \Phi^T \tilde{y
 | 2023 | 8.26%            | 1.94          | 0.51%          | 0.39%     |
 | 2024 | 3.15%            | 1.17          | 0.71%          | 0.48%     |
 
- Lower drawdowns and steady performance during market downturns.
+-> Lower drawdowns and steady performance during market downturns.
 
 ## Further collaboration or questions
 We are willing to collaborate and discuss this topic with those interested. If you want to further connect, you can contact the corresponding author via the paper in ArXiv by mail [zhangzf@umich.edu](mailto:zhangzf@umich.edu). 
