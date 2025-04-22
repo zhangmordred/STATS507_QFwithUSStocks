@@ -46,7 +46,7 @@ w^{(t)}_n = \frac{1}{b \cdot \varrho} \cdot (\tilde{y}^{(t-1)}_n \Phi^T \tilde{y
 ```
 
 ### Other Settings
-**Transaction fee**: 0.3% for each time long or short
+**Transaction fee**: 0.3% for each time trade
 
 **Trading period**: 01/2020-12/2024
 
@@ -71,11 +71,12 @@ w^{(t)}_n = \frac{1}{b \cdot \varrho} \cdot (\tilde{y}^{(t-1)}_n \Phi^T \tilde{y
 -> Lower drawdowns and steady performance during market downturns.
 
 ## Further collaboration or questions
-We are willing to collaborate and discuss this topic with those interested. If you want to further connect, you can contact the corresponding author via the paper in ArXiv by mail [zhangzf@umich.edu](mailto:zhangzf@umich.edu). 
+We are willing to collaborate and discuss this topic with those interested. If you want to further connect, feel free to contact me by mail [zhangzf@umich.edu](mailto:zhangzf@umich.edu). 
 
 ## 🔗 Links
 - [HuggingFace Dataset - Stocks](https://huggingface.co/datasets/paperswithbacktest/Stocks-Daily-Price)
-- [Project GitHub Page](https://github.com/zhangmordred/STATS507_QFwithUSStocks)
+- [HuggingFace Dataset - Balance Sheet](https://huggingface.co/datasets/paperswithbacktest/Stocks-Quarterly-BalanceSheet)
+- [Original Project GitHub Page](https://github.com/zhangmordred/STATS507_QFwithUSStocks)
 
 ---
 © 2025 | Zhaofeng Zhang | University of Michigan
